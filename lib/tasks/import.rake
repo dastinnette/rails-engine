@@ -1,7 +1,6 @@
 require "csv"
 
-desc "Import data from csv file"
-task :import => [:environment] do
+task :import => :environment do
 
   file = File.read("data/merchants.csv")
   csv  = CSV.parse(file, :headers => true)
