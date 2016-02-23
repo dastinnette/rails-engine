@@ -22,7 +22,7 @@ class Api::V1::InvoiceItemsFinderController < ApplicationController
   end
 
   def find_params
-    respond_with InvoiceItem.find(id: params[:id]) if params[:id]
+    respond_with InvoiceItem.find_by(id: params[:id]) if params[:id]
     respond_with InvoiceItem.find_by(item_id: params[:item_id]) if params[:item_id]
     respond_with InvoiceItem.find_by(invoice_id: params[:invoice_id]) if params[:invoice_id]
     respond_with InvoiceItem.find_by(quantity: params[:quantity]) if params[:quantity]
