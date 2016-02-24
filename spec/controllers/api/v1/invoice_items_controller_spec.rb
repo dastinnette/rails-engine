@@ -19,8 +19,8 @@ RSpec.describe Api::V1::InvoiceItemsController, type: :controller do
       expect(invoice_item1["invoice_id"]).to eq invoice_items(:invoice_item1).invoice_id
       expect(invoice_item1["quantity"]).to   eq invoice_items(:invoice_item1).quantity
       expect(invoice_item1["unit_price"]).to eq invoice_items(:invoice_item1).unit_price
-      expect(invoice_item1["created_at"]).to eq "2012-03-27T14:54:09.000Z"
-      expect(invoice_item1["updated_at"]).to eq "2012-03-27T14:54:09.000Z"
+      expect(invoice_item1["created_at"]).to eq "2012-03-27T14:54:11.000Z"
+      expect(invoice_item1["updated_at"]).to eq "2012-03-27T14:54:11.000Z"
 
       expect(invoice_item2["item_id"]).to    eq invoice_items(:invoice_item2).item_id
       expect(invoice_item2["invoice_id"]).to eq invoice_items(:invoice_item2).invoice_id
@@ -44,8 +44,8 @@ RSpec.describe Api::V1::InvoiceItemsController, type: :controller do
       expect(body["invoice_id"]).to eq invoice_items(:invoice_item1).invoice_id
       expect(body["quantity"]).to   eq invoice_items(:invoice_item1).quantity
       expect(body["unit_price"]).to eq invoice_items(:invoice_item1).unit_price
-      expect(body["created_at"]).to eq "2012-03-27T14:54:09.000Z"
-      expect(body["updated_at"]).to eq "2012-03-27T14:54:09.000Z"
+      expect(body["created_at"]).to eq "2012-03-27T14:54:11.000Z"
+      expect(body["updated_at"]).to eq "2012-03-27T14:54:11.000Z"
     end
   end
 end
