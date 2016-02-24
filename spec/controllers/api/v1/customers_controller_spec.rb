@@ -19,6 +19,7 @@ RSpec.describe Api::V1::CustomersController, type: :controller do
       expect(customer1["last_name"]).to  eq customers(:customer1).last_name
       expect(customer1["created_at"]).to eq "2012-03-27T14:54:09.000Z"
       expect(customer1["updated_at"]).to eq "2012-03-27T14:54:09.000Z"
+
       expect(customer2["first_name"]).to eq customers(:customer2).first_name
       expect(customer2["last_name"]).to  eq customers(:customer2).last_name
       expect(customer2["created_at"]).to eq "2012-03-28T14:54:09.000Z"

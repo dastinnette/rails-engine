@@ -20,6 +20,7 @@ RSpec.describe Api::V1::InvoicesController, type: :controller do
       expect(invoice1["status"]).to      eq invoices(:invoice1).status
       expect(invoice1["created_at"]).to  eq "2012-03-25T09:54:09.000Z"
       expect(invoice1["updated_at"]).to  eq "2012-03-25T09:54:09.000Z"
+
       expect(invoice2["customer_id"]).to eq invoices(:invoice2).customer_id
       expect(invoice2["merchant_id"]).to eq invoices(:invoice2).merchant_id
       expect(invoice2["status"]).to      eq invoices(:invoice2).status
