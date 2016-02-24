@@ -12,7 +12,7 @@ class Api::V1::TransactionsFinderController < ApplicationController
   private
 
   def find_all_params
-    respond_with Transaction.find(params[:id]) if params[:id]
+    respond_with Transaction.where(id: params[:id]) if params[:id]
     respond_with Transaction.where(invoice_id: params[:invoice_id]) if params[:invoice_id]
     respond_with Transaction.where(credit_card_number: params[:credit_card_number]) if params[:credit_card_number]
     respond_with Transaction.where(created_at: params[:created_at]) if params[:created_at]

@@ -9,18 +9,6 @@ class Api::V1::TransactionsController < ApplicationController
     respond_with Transaction.find(params[:id])
   end
 
-  def find
-    respond_with Transaction.find_by(transaction_params)
-  end
-
-  def find_all
-    respond_with Transaction.where(transaction_params)
-  end
-
-  def random
-    respond_with Transaction.random
-  end
-
   private
 
   def transaction_params
