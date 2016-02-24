@@ -18,6 +18,7 @@ RSpec.describe Api::V1::MerchantsController, type: :controller do
       expect(merchant1["name"]).to       eq merchants(:merchant1).name
       expect(merchant1["created_at"]).to eq "2012-03-27T14:54:09.000Z"
       expect(merchant1["updated_at"]).to eq "2012-03-27T14:54:09.000Z"
+
       expect(merchant2["name"]).to       eq merchants(:merchant2).name
       expect(merchant2["created_at"]).to eq "2012-03-26T14:54:09.000Z"
       expect(merchant2["updated_at"]).to eq "2012-03-26T14:54:09.000Z"
