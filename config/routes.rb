@@ -23,12 +23,36 @@ Rails.application.routes.draw do
       get "/merchants/random", to: "merchants_random#show"
       get "/transactions/random", to: "transactions_random#show"
 
-      resources :customers,     only: [:index, :show]
-      resources :invoice_items, only: [:index, :show]
-      resources :invoices,      only: [:index, :show]
-      resources :items,         only: [:index, :show]
-      resources :merchants,     only: [:index, :show]
-      resources :transactions,  only: [:index, :show]
+      resources :merchants, only: [:index, :show] do
+        resources :items, only: [:index], :controller => 'merchants/items'
+        resources :invoices, only: [:index], :controller => 'merchants/invoices'
+      end
+
+      resources :transactions, only: [:index, :show]
+
+      resources :customers, only: [:index, :show] do
+        resources :invoices, only: [:index], :controller => 'customers/invoices'
+        resources :transactions, only: [:index], :controller => 'customers/transactions'
+      end
+
+      resources :items, only: [:index, :show] do
+        resources :invoice_items, only: [:index], :controller => 'items/invoice_items'
+        resources :merchants, only: [:index], :controller => 'items/merchants'
+      end
+
+      resources :invoices, only: [:index, :show] do
+        resources :transactions, only: [:index], :controller => 'invoices/transactions'
+        resources :invoice_items, only: [:index], :controller => 'invoices/invoice_items'
+        resources :items, only: [:index], :controller => 'invoices/items'
+        resources :customers, only: [:index], :controller => 'invoices/customers'
+        resources :merchants, only: [:index], :controller => 'invoices/merchants'
+      end
+
+      resources :invoice_items, only: [:index, :show] do
+        resources :invoices, only: [:index], :controller => 'invoice_items/invoices'
+        resources :items, only: [:index], :controller => 'invoice_items/items'
+      end
+
     end
   end
 
