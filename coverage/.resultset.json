@@ -50,6 +50,26 @@
         null,
         null
       ],
+      "/Users/davidstinnette/Turing/3module/1510/rails-engine/rails_engine/app/controllers/api/v1/customers_random_controller.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/davidstinnette/Turing/3module/1510/rails-engine/rails_engine/app/controllers/api/v1/invoice_items_random_controller.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
       "/Users/davidstinnette/Turing/3module/1510/rails-engine/rails_engine/app/controllers/api/v1/invoices_controller.rb": [
         1,
         1,
@@ -71,6 +91,16 @@
         null,
         null,
         null,
+        null,
+        null,
+        null
+      ],
+      "/Users/davidstinnette/Turing/3module/1510/rails-engine/rails_engine/app/controllers/api/v1/invoices_random_controller.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
         null,
         null,
         null
@@ -101,6 +131,16 @@
         null,
         null
       ],
+      "/Users/davidstinnette/Turing/3module/1510/rails-engine/rails_engine/app/controllers/api/v1/items_random_controller.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
       "/Users/davidstinnette/Turing/3module/1510/rails-engine/rails_engine/app/controllers/api/v1/merchants_controller.rb": [
         1,
         1,
@@ -117,6 +157,16 @@
         null,
         1,
         0,
+        null,
+        null,
+        null
+      ],
+      "/Users/davidstinnette/Turing/3module/1510/rails-engine/rails_engine/app/controllers/api/v1/merchants_random_controller.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
         null,
         null,
         null
@@ -147,10 +197,40 @@
         null,
         null
       ],
+      "/Users/davidstinnette/Turing/3module/1510/rails-engine/rails_engine/app/controllers/api/v1/transactions_random_controller.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
       "/Users/davidstinnette/Turing/3module/1510/rails-engine/rails_engine/app/models/customer.rb": [
         1,
         1,
         null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/davidstinnette/Turing/3module/1510/rails-engine/rails_engine/app/models/invoice_item.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
         null,
         1,
         0,
@@ -168,7 +248,7 @@
         1,
         null,
         1,
-        0,
+        1,
         null,
         null,
         null
@@ -183,7 +263,7 @@
         null,
         null,
         1,
-        0,
+        1,
         null,
         null,
         1,
@@ -201,7 +281,7 @@
         null,
         null,
         1,
-        0,
+        1,
         null,
         null,
         null
@@ -212,7 +292,7 @@
         1,
         null,
         1,
-        0,
+        1,
         null,
         null,
         null
@@ -252,16 +332,6 @@
         0,
         0,
         0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "/Users/davidstinnette/Turing/3module/1510/rails-engine/rails_engine/app/controllers/api/v1/customers_random_controller.rb": [
         0,
         0,
         0,
@@ -333,16 +403,6 @@
         0,
         0
       ],
-      "/Users/davidstinnette/Turing/3module/1510/rails-engine/rails_engine/app/controllers/api/v1/invoice_items_random_controller.rb": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
       "/Users/davidstinnette/Turing/3module/1510/rails-engine/rails_engine/app/controllers/api/v1/invoices_finder_controller.rb": [
         0,
         0,
@@ -368,16 +428,6 @@
         0,
         0,
         0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "/Users/davidstinnette/Turing/3module/1510/rails-engine/rails_engine/app/controllers/api/v1/invoices_random_controller.rb": [
         0,
         0,
         0,
@@ -423,16 +473,6 @@
         0,
         0
       ],
-      "/Users/davidstinnette/Turing/3module/1510/rails-engine/rails_engine/app/controllers/api/v1/items_random_controller.rb": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
       "/Users/davidstinnette/Turing/3module/1510/rails-engine/rails_engine/app/controllers/api/v1/merchants_finder_controller.rb": [
         0,
         0,
@@ -454,16 +494,6 @@
         0,
         0,
         0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "/Users/davidstinnette/Turing/3module/1510/rails-engine/rails_engine/app/controllers/api/v1/merchants_random_controller.rb": [
         0,
         0,
         0,
@@ -506,38 +536,8 @@
         0,
         0,
         0
-      ],
-      "/Users/davidstinnette/Turing/3module/1510/rails-engine/rails_engine/app/controllers/api/v1/transactions_random_controller.rb": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "/Users/davidstinnette/Turing/3module/1510/rails-engine/rails_engine/app/models/invoice_item.rb": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
       ]
     },
-    "timestamp": 1456326595
+    "timestamp": 1456344232
   }
 }
