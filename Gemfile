@@ -21,6 +21,7 @@ group :development, :test do
   gem 'binding_of_caller'
   gem 'pry'
   gem 'rspec-rails'
+  gem 'simplecov'
 end
 
 group :development do
