@@ -2,6 +2,8 @@ class InvoiceItem < ActiveRecord::Base
   before_validation :calculate_money
   validates :unit_price, presence: true
   validates :quantity, presence: true
+  validates :item_id, presence: true
+  validates :invoice_id, presence: true
 
   belongs_to :item
   belongs_to :invoice
