@@ -1,6 +1,9 @@
 class Item < ActiveRecord::Base
   before_validation :calculate_money
   validates :unit_price, presence: true
+  validates :name, presence: true
+  validates :description, presence: true
+  validates :merchant_id, presence: true
 
   belongs_to :merchant
   has_many :invoice_items

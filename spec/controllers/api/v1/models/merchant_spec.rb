@@ -29,5 +29,10 @@ RSpec.describe Merchant, type: :model do
       expect(customer[:last_name]).to eq "Cruz"
     end
 
+    it "is invalid without a name" do
+      merchant = Merchant.new
+      expect(merchant).to be_invalid
+    end
+
   end
 end
