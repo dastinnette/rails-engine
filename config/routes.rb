@@ -37,7 +37,9 @@ Rails.application.routes.draw do
 
       resources :items, only: [:index, :show] do
         resources :invoice_items, only: [:index], :controller => 'items/invoice_items'
-        resources :merchants, only: [:index], :controller => 'items/merchants'
+        member do
+          get "/merchant", to: "items/merchants#show"
+        end
       end
 
       resources :invoices, only: [:index, :show] do
