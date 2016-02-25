@@ -15,4 +15,14 @@ class Merchant < ActiveRecord::Base
     invoices.where(created_at: date).joins(:transactions).where(transactions: { result: "success" }).joins(:invoice_items).sum("quantity * unit_price")
   end
 
+  def favorite_customer
+    successful_invoices = invoices.joins(:transactions).where(transactions: { result: "success" })
+    customer_id = successful_invoices.group_by(&:customer_id).max_by { |_k, v| v.count }.flatten.first
+    Customer.find(customer_id)
+  end
+
+  def successful_invoices
+    #code
+  end
+
 end
