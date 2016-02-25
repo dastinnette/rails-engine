@@ -29,6 +29,7 @@ Rails.application.routes.draw do
       end
       get "merchants/:id/revenue", to: "merchants/revenue#show"
       get "merchants/:id/favorite_customer", to: "merchants/favorite_customer#show"
+      get "merchants/:id/customers_with_pending_invoices", to: "merchants/customers_with_pending_invoices#index"
 
       resources :transactions, only: [:index, :show] do
         member do
