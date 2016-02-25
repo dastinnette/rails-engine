@@ -3,6 +3,8 @@ class Merchant < ActiveRecord::Base
   has_many :items
   has_many :invoice_items, through: :invoices
 
+  validates :name, presence: true
+
   def self.random
     order("RANDOM()").first
   end
