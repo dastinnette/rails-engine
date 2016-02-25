@@ -1,9 +1,11 @@
 merchant1:
+  id: 1
   name: "MacDonald's"
   created_at: "2012-03-27 14:54:09 UTC"
   updated_at: "2012-03-27 14:54:09 UTC"
 
 merchant2:
+  id: 2
   name: "McDonalds"
   created_at: "2012-03-26 14:54:09 UTC"
   updated_at: "2012-03-26 14:54:09 UTC"

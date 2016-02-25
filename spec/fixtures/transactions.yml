@@ -1,4 +1,5 @@
 transaction1:
+  id: 1
   invoice_id: 1
   credit_card_number: 4242424242424242
   result: "success"
@@ -6,7 +7,8 @@ transaction1:
   updated_at: "2012-03-27 14:54:09"
 
 transaction2:
-  invoice_id: 22
+  id: 2
+  invoice_id: 2
   credit_card_number: 1313131313131313
   result: "failure"
   created_at: "2012-03-26 14:54:09"
