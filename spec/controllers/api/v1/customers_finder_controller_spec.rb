@@ -130,20 +130,6 @@ RSpec.describe Api::V1::CustomersFinderController, type: :controller do
       expect(body["updated_at"]).to eq "2012-03-27T14:54:09.000Z"
     end
 
-    xit "finds one customer by last_name" do
-      get :show, format: :json, last_name: customers(:customer1).last_name
-
-      expect(response.status).to eq(200)
-      expect(response.content_type).to eq "application/json"
-
-      body = JSON.parse(response.body)
-
-      expect(body["first_name"]).to eq customers(:customer1).first_name
-      expect(body["last_name"]).to  eq customers(:customer1).last_name
-      expect(body["created_at"]).to eq "2012-03-27T14:54:09.000Z"
-      expect(body["updated_at"]).to eq "2012-03-27T14:54:09.000Z"
-    end
-
     it "finds one customer by created_at" do
       get :show, format: :json, created_at: customers(:customer1).created_at
 
