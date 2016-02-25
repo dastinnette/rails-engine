@@ -7,4 +7,8 @@ class Merchant < ActiveRecord::Base
     order("RANDOM()").first
   end
 
+  def revenue
+    invoices.joins(:transactions).where(transactions: { result: "success" }).joins(:invoice_items).sum("quantity * unit_price")
+  end
+
 end
